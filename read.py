@@ -24,5 +24,6 @@ for num in range(1, pages):
 
     text = page.extractText()
     read_out.say(text)
-
+    # save audio to file
+    read_out.save_to_file(text , 'Theraven.mp3')
     read_out.runAndWait()
